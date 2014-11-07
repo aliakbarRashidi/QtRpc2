@@ -27,7 +27,10 @@ on Debian or Ubuntu, this command will install the required dependencies.
 ```
 sudo apt-get install libqt4-dev cmake libavahi-client-dev libavahi-compat-libdnssd-dev
 ```
-
+on Fedora
+```
+sudo yum install avahi-compat-libdns_sd-devel avahi-devel
+```
 ### Building
 Check out the git repository with   
 ```
