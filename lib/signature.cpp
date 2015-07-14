@@ -34,6 +34,7 @@
 
 #include <QRegExp>
 #include <QDebug>
+#include <QDataStream>
 
 using namespace QtRpc;
 
@@ -280,14 +281,15 @@ QDataStream& operator>> (QDataStream& s, QtRpc::Signature& p)
 	s >> arg;
 	p.setArg(i, arg);
 	}
-	*/
-	s >> p.qxt_d().data->name >> p.qxt_d().data->args;
+    */
+
+    s >> p.qxt_d().data->name >> p.qxt_d().data->args;
 	return s;
 }
 
 QDataStream& operator<< (QDataStream& s, const QtRpc::Signature& p)
 {
-	s << p.qxt_d().data->name << p.qxt_d().data->args;
+    s << p.qxt_d().data->name << p.qxt_d().data->args;
 	return s;
 }
 

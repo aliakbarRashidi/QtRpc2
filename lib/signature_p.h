@@ -49,7 +49,7 @@ class SignatureData : public QSharedData
 {
 public:
 	QString name;
-	QVector<QString> args;
+    QVector<QString> args;
 };
 
 /**
